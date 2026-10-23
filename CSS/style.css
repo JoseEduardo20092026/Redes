@@ -1,0 +1,420 @@
+
+@charset "UTF-8";
+
+:root {
+    color-scheme: dark;
+    --Cor_Do_Menu: #4838ff;
+    --Cor_De_Fonte_Padrao: #000000;
+    --Cor_De_Fundo: #011a47;
+    --Cor_De_Texto: #ff751f;
+    --Cor_De_Destaque: #ffdb59;
+    --Cor_De_Hover: yellowgreen;
+    --Cor_Do_Rodape_Inicial: #5de0e6;
+    --Cor_Do_Rodape_Final: #004aad;
+    --Espacamento_Pequeno: 8px;
+    --Espacamento_Medio: 16px;
+    --Espacamento_Grande: 24px;
+    --Largura_Maxima: 1200px;
+    --Raio_Da_Borda: 8px;
+    --Sombra_Padrao: 2px 2px 8px rgb(0, 0, 0, 0.3);
+    --Transicao_Padrao: 0.3s ease;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+    color: var(--Cor_De_Texto);
+    background-color: var(--Cor_De_Fundo);
+    overflow-wrap: break-word;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    transition:
+        color var(--Transicao_Padrao),
+        background-color var(--Transicao_Padrao),
+        text-decoration-color var(--Transicao_Padrao);
+}
+
+ul {
+    padding-left: 24px;
+}
+
+nav {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--Cor_Do_Menu);
+    box-shadow: var(--Sombra_Padrao);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 30px;
+    max-width: var(--Largura_Maxima);
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    width: auto;
+    padding: 7px 12px;
+    border-radius: 5px;
+    transition:
+        background-color var(--Transicao_Padrao),
+        transform var(--Transicao_Padrao);
+}
+
+nav ul li:hover {
+    background-color: var(--Cor_De_Hover);
+}
+
+nav ul li:active {
+    transform: scale(0.97);
+}
+
+a.Items_Do_Menu {
+    display: inline-block;
+    color: var(--Cor_De_Fonte_Padrao);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+img#Imagem_Principal {
+    width: 100%;
+    height: clamp(250px, 65vh, 760px);
+    object-fit: cover;
+    object-position: center;
+}
+
+h2 {
+    max-width: 100%;
+    margin: 0 auto 20px;
+    color: var(--Cor_De_Texto);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.3;
+    text-align: center;
+}
+
+h3 {
+    color: var(--Cor_De_Destaque);
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    line-height: 1.4;
+    text-align: center;
+}
+
+p {
+    margin: 0 0 16px;
+    color: var(--Cor_De_Texto);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+section#Secao_Redes, section#Secao_Profissoes, section#Secao_Conhecimentos_Necessarios, section#Secao_Ferramentas, section#Secao_Equipamentos, section#Secao_Tecnologias, section#Secao_Tendencias_Atuais, section#Secao_Ingles_Tecnico {
+    width: 100%;
+    max-width: var(--Largura_Maxima);
+    height: auto;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+section#Secao_Profissoes ul, section#Secao_Conhecimentos_Necessarios ul, section#Secao_Ferramentas ul, section#Secao_Equipamentos ul, section#Secao_Tecnologias ul, section#Secao_Tendencias_Atuais ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+    margin: 0;
+    padding-left: 28px;
+    color: var(--Cor_De_Texto);
+}
+
+section#Secao_Profissoes li, section#Secao_Conhecimentos_Necessarios li, section#Secao_Ferramentas li, section#Secao_Equipamentos li, section#Secao_Tecnologias li, section#Secao_Tendencias_Atuais li {
+    padding-left: 2px;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table th, table td {
+    min-width: 100px;
+    padding: 14px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    overflow-wrap: anywhere;
+}
+
+table th {
+    color: #000000;
+    background-color: #7ed957;
+    font-weight: bold;
+    text-align: center;
+}
+
+table td {
+    color: #000000;
+    background-color: #ffebcd;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    min-height: 120px;
+    margin: 0;
+    padding: 24px;
+    background-image: linear-gradient(to left, var(--Cor_Do_Rodape_Inicial), var(--Cor_Do_Rodape_Final));
+}
+
+footer h2 {
+    margin-bottom: 16px;
+    color: var(--Cor_De_Fonte_Padrao);
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding-left: 24px;
+}
+
+footer a {
+    color: var(--Cor_De_Fonte_Padrao);
+    font-size: 1.05rem;
+    text-decoration: none;
+    text-underline-offset: 4px;
+}
+
+footer a:hover {
+    color: #005000;
+    text-decoration: underline;
+}
+
+footer a:active {
+    color: #a00000;
+}
+
+section#Secao_Desenvolvedores {
+    width: 100%;
+    margin: 24px 0 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #000000;
+}
+
+section#Secao_Desenvolvedores h2 {
+    margin: 0;
+    color: var(--Cor_De_Destaque);
+}
+
+section#Secao_De_Logos {
+    width: 100%;
+    max-width: var(--Largura_Maxima);
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(24px, 6vw, 100px);
+}
+
+img.Logo_Do_Instagram, img.Logo_Do_GitHub {
+    width: clamp(100px, 20vw, 220px);
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+img.Logo_Do_Instagram:hover, img.Logo_Do_GitHub:hover {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 8px 12px;
+    }
+
+    nav ul li {
+        padding: 8px;
+    }
+
+    a.Items_Do_Menu {
+        font-size: 1rem;
+    }
+
+    img#Imagem_Principal {
+        height: clamp(220px, 45vh, 450px);
+    }
+
+    section#Secao_Redes, section#Secao_Profissoes, section#Secao_Conhecimentos_Necessarios, section#Secao_Ferramentas, section#Secao_Equipamentos, section#Secao_Tecnologias, section#Secao_Tendencias_Atuais, section#Secao_Ingles_Tecnico {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 0.95rem;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+
+    section#Secao_De_Logos {
+        gap: 32px;
+    }
+
+    img.Logo_Do_Instagram, img.Logo_Do_GitHub {
+        width: clamp(100px, 25vw, 180px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        line-height: 1.55;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    nav ul {
+        gap: 6px;
+    }
+
+    nav ul li {
+        padding: 7px;
+    }
+
+    a.Items_Do_Menu {
+        font-size: 0.9rem;
+    }
+
+    img#Imagem_Principal {
+        height: 280px;
+        object-position: center;
+    }
+
+    section#Secao_Redes, section#Secao_Profissoes, section#Secao_Conhecimentos_Necessarios, section#Secao_Ferramentas, section#Secao_Equipamentos, section#Secao_Tecnologias, section#Secao_Tendencias_Atuais, section#Secao_Ingles_Tecnico {
+        padding: 16px;
+        gap: 10px;
+    }
+
+    h2 {
+        margin-bottom: 12px;
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    section#Secao_Profissoes ul, section#Secao_Conhecimentos_Necessarios ul, section#Secao_Ferramentas ul, section#Secao_Equipamentos ul, section#Secao_Tecnologias ul, section#Secao_Tendencias_Atuais ul {
+        padding-left: 22px;
+        gap: 6px;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.9rem;
+    }
+
+    table th, table td {
+        min-width: 100px;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 20px 16px;
+    }
+
+    footer h2 {
+        font-size: 1.1rem;
+    }
+
+    footer a {
+        font-size: 1rem;
+    }
+
+    section#Secao_Desenvolvedores {
+        padding: 20px 12px;
+        gap: 16px;
+    }
+
+    section#Secao_De_Logos {
+        padding: 12px;
+        gap: 24px;
+    }
+
+    img.Logo_Do_Instagram, img.Logo_Do_GitHub {
+        width: clamp(90px, 30vw, 140px);
+    }
+}
+
+a:focus-visible {
+    outline: 3px solid var(--Cor_De_Destaque);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    img.Logo_Do_Instagram:hover, img.Logo_Do_GitHub:hover {
+        transform: none;
+    }
+}
