@@ -6,16 +6,17 @@
 
 2. Tecnologias utilizadas
     -HTML5.
-    -CSS3
+    -CSS3.
     -FlexBox CSS.
-    -Media query
+    -Media query.
+    -Ícones obtidos através do site https://www.flaticon.com
 
-4. Dispositivos aos quais o site pode ser visualizado sem que o layout quebre:
+3. Dispositivos aos quais o site pode ser visualizado sem que o layout quebre:
    -Celulares.
    -Tablets.
    -PC's.
 
-5. Estrutura do projeto:
+4. Estrutura do projeto:
    Trabalho de redes/
        -index.html
        CSS/
@@ -24,7 +25,7 @@
        IMG/
          -Imagem_Principal.png
          -Logo_Do_GitHub.png
-         -Logo_Do_Instagram
+         -Logo_Do_Instagram.png
        Layout_Do_Site/
          -Layout_Ou_Prototipo.png
        Pages/
