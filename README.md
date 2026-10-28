@@ -13,8 +13,15 @@
    -Celulares.
    -Tablets.
    -PC's.
-   
 
+5. Estrutura do projeto:
+   Trabalho de redes/
+       -index.html
+       CSS/
+         -style.css
+         -indisponivel.css
+        IMG/
+          -
    
 
    
