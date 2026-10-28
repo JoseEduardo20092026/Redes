@@ -20,12 +20,14 @@
        CSS/
          -style.css
          -indisponivel.css
-        IMG/
-          -Imagem_Principal.png
-          -Logo_Do_GitHub.png
-          -Logo_Do_Instagram
-        Layout_Do_Site/
-          -
+       IMG/
+         -Imagem_Principal.png
+         -Logo_Do_GitHub.png
+         -Logo_Do_Instagram
+       Layout_Do_Site/
+         -Layout_Ou_Prototipo.png
+       Pages/
+   
    
 
    
