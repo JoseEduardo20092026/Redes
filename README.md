@@ -7,8 +7,9 @@
     -HTML5.
     -CSS3
     -FlexBox CSS.
+    -Media query
 
-3. Dispositivos aos quais o site pode ser visualizado sem que o layout quebre:
+4. Dispositivos aos quais o site pode ser visualizado sem que o layout quebre:
    -Celulares.
    -Tablets.
    -PC's.
